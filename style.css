@@ -1,0 +1,187 @@
+body
+{
+    /* border:2px solid rgb(233, 22, 22); */
+    margin:0;
+    box-sizing:border-box;
+}
+.main{
+    /* border:2px solid blue; */
+    display:flex;
+    align-items:center; 
+
+
+}
+#left{
+    /* background-color: red; */
+    height:90vh;
+    width:30vw;
+
+}
+
+
+nav{
+     display:flex;
+     align-items:center;
+     height:4vmax;
+     border:2px solid firebrick;
+}
+.leftnav{
+    /* border:2px solid black; */
+    width:20%;
+    justify-content:center;
+    display:flex;
+    
+}
+.leftnav>svg{
+    width:38%;
+    /* border:2px solid green; */
+}
+.rightnav{
+    /* border:2px solid green; */
+    width:50%;
+    /* margin-left:1vmax; */
+    display:flex;
+  justify-content:space-evenly;
+    align-self:stretch;
+    
+    
+
+}
+
+.rightnav>a{
+    /* border:2px solid teal; */
+    color:black;
+    font-weight:600;
+    font-size:1.4vmax;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration:none;
+display:flex;
+justify-content: center;
+align-items:center;
+
+
+}
+
+.rightnav>svg{
+    width:15%;
+    display:flex;
+justify-content: center;
+align-items:center;
+
+}
+/* .home{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    border:2px solid rgb(247, 20, 235);
+} */
+.half{
+    position:relative;
+}
+.textcenter{
+    /* border:2px solid rgb(196, 193, 11); */
+   /* flex-direction:column;
+    display:flex;
+   justify-content:center;
+  
+   padding:2vmax;
+  */
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+
+}
+h1{
+    /* border:2px solid green; */
+    font-size:7vmax;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+p{
+    /* border:3px solid red; */
+    /* margin-top:-12%; */
+    margin-top:-5vmax;
+    margin-bottom:.1vmax;
+    line-height:1.7vmax;
+    opacity:.7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+h2{
+    /* margin-top:-3%; */
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.7vmax;
+    display:inline-block;
+    /* border:2px solid rgb(23, 207, 240); */
+    border-bottom:.2vmax solid black;
+     /* padding-bottom:1vmax;  */
+    /* text-decoration-line: underline; */
+  
+
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+.righttop{
+   
+    display:flex;
+    
+    
+   
+}
+.leftf{
+   
+    height:45vh;
+    width:35vw;
+    background-image: url('https://images.unsplash.com/photo-1551888419-7b7a520fe0ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');
+/*     
+    background-color: yellow; */
+    background-position: center;
+    background-size: cover;
+}
+.rightf{
+    /* background-color: teal; */
+    height:45vh;
+    width:35vw;
+    background-image: url('https://images.unsplash.com/photo-1592187270271-9a4b84faa228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');
+    background-size: cover;
+    background-position:center;
+
+}
+.bottom{
+    background-color: pink;
+    height:45vh;
+    width:70vw;
+    background-image: url('https://images.unsplash.com/photo-1509223197845-458d87318791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1249&q=80');
+    background-size:cover ;
+    background-position: center;
+}
+
+@media(max-width:500px){
+    .main{
+        flex-direction:column;
+
+    }
+    left{
+        width:100%;
+
+    }
+    right{
+        width:100%;
+    }
+}
